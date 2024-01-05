@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0bB-ou-Xs6">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="PnX-ZI-fgF">
+                                <rect key="frame" x="-91" y="-187" width="575" height="1216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_outline" translatesAutoresizingMaskIntoConstraints="NO" id="dAj-ms-VUI">
+                                <rect key="frame" x="210" y="748" width="240" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i78-kX-810">
+                                <rect key="frame" x="161" y="247" width="193" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="newstartbutton"/>
+                                <connections>
+                                    <segue destination="pyJ-3c-zZl" kind="show" id="el1-SB-Imn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYo-Iz-XyK">
+                                <rect key="frame" x="276" y="315" width="78" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="demo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uar-fl-2Hp" kind="show" id="JWQ-as-aOG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house_3d_model" translatesAutoresizingMaskIntoConstraints="NO" id="VPD-P4-suy">
+                                <rect key="frame" x="-34" y="482" width="452" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shanghai" translatesAutoresizingMaskIntoConstraints="NO" id="R2g-fh-rVQ">
+                                <rect key="frame" x="68" y="82" width="257" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titleborder2" translatesAutoresizingMaskIntoConstraints="NO" id="FBM-KG-Jc0">
+                                <rect key="frame" x="-18" y="79" width="222" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKe-YC-9K7">
+                                <rect key="frame" x="200" y="373" width="154" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="aboutus"/>
+                                <connections>
+                                    <segue destination="yNO-nZ-T16" kind="show" id="6yz-uC-sLL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titleborder" translatesAutoresizingMaskIntoConstraints="NO" id="W84-Pa-PbU">
+                                <rect key="frame" x="172" y="77" width="246" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="Wpz-1z-xeC">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="MMS-Oe-FuU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutButton" destination="pKe-YC-9K7" id="11l-3T-yOB"/>
+                        <outlet property="demoButton" destination="dYo-Iz-XyK" id="dyb-6n-wdd"/>
+                        <outlet property="launchButton" destination="i78-kX-810" id="slr-HT-4X1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89.312977099236633" y="-18.30985915492958"/>
+        </scene>
+        <!--开始-->
+        <scene sceneID="6iJ-S5-0VW">
+            <objects>
+                <viewController id="pyJ-3c-zZl" customClass="PreloadViewController" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GNP-Um-Nde">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Hya-0i-lcg">
+                                <rect key="frame" x="-92" y="-182" width="575" height="1216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="hCP-cc-81R">
+                                <rect key="frame" x="8" y="549" width="377" height="248"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZQ-gW-Yyd">
+                                <rect key="frame" x="34" y="117" width="322" height="402"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o0-Zr-2lq">
+                                <rect key="frame" x="33" y="601" width="325" height="68"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="找一片平的地">
+                                        <attributes>
+                                            <color key="NSColor" red="0.96408361200000003" green="0.91418969630000002" blue="0.83625727890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="xiaowei"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwn-fb-vDO">
+                                <rect key="frame" x="127" y="672" width="139" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="GREYSTARTBUTTON">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x2m-Gz-Jjy" kind="show" id="OkU-Lc-WMN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O03-Ie-bgG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="开始" id="D8G-As-u12"/>
+                    <connections>
+                        <outlet property="mapView" destination="SZQ-gW-Yyd" id="L0w-4e-JMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5k-7t-Kym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783.96946564885491" y="-18.30985915492958"/>
+        </scene>
+        <!--Camera Line Up View Controller-->
+        <scene sceneID="wiD-w6-rjl">
+            <objects>
+                <viewController id="x2m-Gz-Jjy" customClass="CameraLineUpViewController" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EO0-wB-2zj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-hj-y3R">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="04T-sx-kwK">
+                                <rect key="frame" x="44" y="138" width="303" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="xiaowei" family="xiaowei" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" backgroundImage="bg1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSW-Gp-EDM">
+                                <rect key="frame" x="166" y="691" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="circle.inset.filled" catalog="system">
+                                    <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="whiteCircleButtonPressed:" destination="x2m-Gz-Jjy" eventType="touchUpInside" id="tyK-J8-oTJ"/>
+                                    <segue destination="2Rj-Qp-TAF" kind="show" identifier="toLoad3DModel" id="umV-11-qOT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sw7-83-Rqc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eac-dU-TEq"/>
+                    <connections>
+                        <outlet property="cameraView" destination="gvq-hj-y3R" id="hmb-29-yeR"/>
+                        <outlet property="descriptionLabel" destination="04T-sx-kwK" id="58r-hv-6ys"/>
+                        <outlet property="whiteCircleButton" destination="cSW-Gp-EDM" id="rqX-Ur-C1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkE-rq-OL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658.7786259541983" y="-18.30985915492958"/>
+        </scene>
+        <!--Load3D Model View Controller-->
+        <scene sceneID="4So-hq-pLC">
+            <objects>
+                <viewController id="2Rj-Qp-TAF" customClass="Load3DModelViewController" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3E6-YB-KYV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQ1-U0-3SC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IJf-UD-M1v">
+                                <rect key="frame" x="45" y="90" width="303" height="322"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="xiaowei" family="xiaowei" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" backgroundImage="bg1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DoP-XK-BH1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sTp-Vk-2Ib"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="IJf-UD-M1v" id="9Da-Xn-cjm"/>
+                        <outlet property="sceneView" destination="zQ1-U0-3SC" id="5YH-Pe-ZtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pz0-BN-dTI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2559.5419847328244" y="-18.30985915492958"/>
+        </scene>
+        <!--教程-->
+        <scene sceneID="kUE-jn-kFG">
+            <objects>
+                <viewController id="Uar-fl-2Hp" customClass="DemoViewController1" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mkp-JJ-B77">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="w0Z-48-LOO">
+                                <rect key="frame" x="-91" y="-187" width="575" height="1216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="goD-dM-SKa">
+                                <rect key="frame" x="8" y="568" width="377" height="227"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="6LI-Iz-9fm">
+                                <rect key="frame" x="21" y="589" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.78835827110000001" green="0.76703792810000004" blue="0.72608226539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid1" translatesAutoresizingMaskIntoConstraints="NO" id="4sd-TJ-PPt">
+                                <rect key="frame" x="12" y="118" width="369" height="346"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="whitearrow" translatesAutoresizingMaskIntoConstraints="NO" id="Dvq-ZY-6Ls">
+                                <rect key="frame" x="316" y="653" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.78835827110000001" green="0.76703792810000004" blue="0.72608226539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD6-vd-iJt">
+                                <rect key="frame" x="227" y="548" width="157" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="返回首页" image="house" catalog="system" backgroundImage="yellowgreybuttontgt"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="返回首页">
+                                    <backgroundConfiguration key="background" image="yellowgreybuttontgt"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3fX-Jb-CgF"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qLs-4B-gZ1">
+                                <rect key="frame" x="34" y="117" width="322" height="402"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlZ-7u-J1z">
+                                <rect key="frame" x="90" y="638" width="199" height="68"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="找一片平的地">
+                                        <attributes>
+                                            <color key="NSColor" red="0.96408361200000003" green="0.91418969630000002" blue="0.83625727890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="xiaowei"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ZV-cz-m1T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4sd-TJ-PPt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="教程" id="KDp-SK-f1c">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="z9F-XM-rsM"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="qLs-4B-gZ1" id="E02-QL-dYQ"/>
+                        <segue destination="vUY-IR-pML" kind="show" identifier="left" id="jw9-nU-9x9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cgy-ZI-RTA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1967.175572519084" y="714.78873239436621"/>
+        </scene>
+        <!--教程-->
+        <scene sceneID="6ej-Xs-yQg">
+            <objects>
+                <viewController id="vUY-IR-pML" customClass="DemoViewController2" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YV4-08-wev">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slid 2 gradient" translatesAutoresizingMaskIntoConstraints="NO" id="9gB-Su-4jd">
+                                <rect key="frame" x="-179" y="-19" width="760" height="861"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="U9Q-Mg-01Y">
+                                <rect key="frame" x="8" y="568" width="377" height="227"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="two" translatesAutoresizingMaskIntoConstraints="NO" id="44d-ZD-1CE">
+                                <rect key="frame" x="21" y="583" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="greyarrow" translatesAutoresizingMaskIntoConstraints="NO" id="wZJ-RL-UKr">
+                                <rect key="frame" x="21" y="653" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="greyarrow" translatesAutoresizingMaskIntoConstraints="NO" id="LOo-SH-x8h">
+                                <rect key="frame" x="321" y="653" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                        <real key="value" value="3.1400000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-dH-WS2">
+                                <rect key="frame" x="74" y="622" width="245" height="101"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="短按屏幕上白色的圆形按钮，确认放置">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="xiaowei"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="3D">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="xiaowei"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="物体的位置">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="xiaowei"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="circle.inset.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-Zh-1Aa">
+                                <rect key="frame" x="159" y="492" width="75" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ofg-1w-TMS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="教程" id="qrd-s3-3vx">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="TJb-HD-HGM"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="T8A-P2-zH9" kind="show" identifier="left" id="vCq-6H-fvg"/>
+                        <segue destination="Uar-fl-2Hp" kind="show" identifier="right" animates="NO" id="HZy-bt-h7p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNu-vF-blK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1121.3740458015266" y="714.78873239436621"/>
+        </scene>
+        <!--教程-->
+        <scene sceneID="X7M-1T-cdv">
+            <objects>
+                <viewController id="T8A-P2-zH9" customClass="DemoViewController3" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ic2-br-yha">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slid 2 gradient" translatesAutoresizingMaskIntoConstraints="NO" id="lNE-m1-71Z">
+                                <rect key="frame" x="-66" y="-19" width="491" height="861"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="Wy1-Wv-Sk3">
+                                <rect key="frame" x="8" y="568" width="377" height="227"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="three" translatesAutoresizingMaskIntoConstraints="NO" id="BJB-n0-s8s">
+                                <rect key="frame" x="21" y="579" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.78835827110000001" green="0.76703792810000004" blue="0.72608226539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qpf-2i-E1w">
+                                <rect key="frame" x="70" y="352" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="whitearrow" translatesAutoresizingMaskIntoConstraints="NO" id="RzS-Rg-hJ3">
+                                <rect key="frame" x="328" y="653" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.78835827110000001" green="0.76703792810000004" blue="0.72608226539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb3-By-2Tj">
+                                <rect key="frame" x="66" y="630" width="260" height="91"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="点击星形的互动按钮，了解更多关于这座建筑背后的故事">
+                                        <attributes>
+                                            <color key="NSColor" red="0.96408361200000003" green="0.91418969630000002" blue="0.83625727890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="xiaowei"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="whitearrow" translatesAutoresizingMaskIntoConstraints="NO" id="EBa-Qx-bPW">
+                                <rect key="frame" x="21" y="653" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.78835827110000001" green="0.76703792810000004" blue="0.72608226539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                        <real key="value" value="3.1400000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tIg-Me-hvD">
+                                <rect key="frame" x="118" y="286" width="162" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="信息..." backgroundImage="bg1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid3" translatesAutoresizingMaskIntoConstraints="NO" id="4d8-Mm-GOC">
+                                <rect key="frame" x="12" y="120" width="369" height="346"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Haf-Ys-GXk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4d8-Mm-GOC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="教程" id="Cb6-WB-wtQ">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="in7-fE-9ST"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Mj6-gz-5mL" kind="show" identifier="left" id="sBf-TG-5nQ"/>
+                        <segue destination="vUY-IR-pML" kind="show" identifier="right" animates="NO" id="RCA-Lr-SBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3th-hZ-tf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-315.26717557251908" y="714.78873239436621"/>
+        </scene>
+        <!--教程-->
+        <scene sceneID="OQr-WN-FVT">
+            <objects>
+                <viewController id="Mj6-gz-5mL" customClass="DemoViewController4" customModule="test4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nvs-aY-ei6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQh-vj-4rf">
+                                <rect key="frame" x="70" y="417" width="27" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slide 4 gradient" translatesAutoresizingMaskIntoConstraints="NO" id="9Md-hc-OOo">
+                                <rect key="frame" x="-76" y="-44" width="566" height="930"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="KIc-e6-HhS">
+                                <rect key="frame" x="8" y="568" width="377" height="227"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="four" translatesAutoresizingMaskIntoConstraints="NO" id="und-WS-Dw8">
+                                <rect key="frame" x="21" y="589" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="greyarrow" translatesAutoresizingMaskIntoConstraints="NO" id="VcR-MT-rte">
+                                <rect key="frame" x="21" y="653" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiZ-No-9ad">
+                                <rect key="frame" x="61" y="618" width="270" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="教程完毕！">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="18" name="xiaowei"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3K-KN-PyK">
+                                <rect key="frame" x="121" y="669" width="141" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="tintColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="继续探索～" backgroundImage="yellowgreybuttontgt"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="yellowgreybuttontgt"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="继续探索">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="xiaowei"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="20"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="gohome" id="7KN-cX-K9g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gu7-BA-f82"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="教程" id="GRW-71-gIy">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="9B4-JJ-rAN"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="T8A-P2-zH9" kind="show" identifier="right" animates="NO" id="wwq-Hi-KDi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbP-PV-6af" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.58015267175568" y="714.78873239436621"/>
+        </scene>
+        <!--了解我们-->
+        <scene sceneID="WHm-3u-uDg">
+            <objects>
+                <viewController id="yNO-nZ-T16" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jRj-YS-2gr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tU6-OZ-YOf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="866"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNr-2l-E3A">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ThL-iH-SVG">
+                                                <rect key="frame" x="-91" y="-304" width="575" height="2111"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMAGE1" translatesAutoresizingMaskIntoConstraints="NO" id="V28-p7-xie">
+                                                <rect key="frame" x="-53" y="429" width="192" height="189"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-Jj-7zf">
+                                                <rect key="frame" x="147" y="443" width="217" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="calendar.badge.clock" catalog="system" backgroundImage="bg2">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="项目始于">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="20"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" 2023">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="年">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="20"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="4">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="月">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="20"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellowbox" translatesAutoresizingMaskIntoConstraints="NO" id="ejU-I9-hjv">
+                                                <rect key="frame" x="20" y="646" width="360" height="440"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFO-jH-fUx">
+                                                <rect key="frame" x="171" y="501" width="217" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="number.circle.fill" catalog="system" backgroundImage="bg2">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="已扫描建筑数：">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="20"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="16/20">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="No5-en-cmN">
+                                                <rect key="frame" x="147" y="560" width="190" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="mappin.circle" catalog="system" backgroundImage="bg2">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="扫描区域：黄浦区">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="17" name="xiaowei"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="20"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJK-qQ-AHX">
+                                                <rect key="frame" x="24" y="229" width="340" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="您好！">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="我们是六位来自">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="上海美国学校的高中生，">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="专注于通过开发">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="APP">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="软件来记录上海独特的弄堂文化。此项目中，我们运用了增强现实">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="(">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="AR">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=") ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="和">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="IOS">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="应用程序记录了上海黄浦区弄堂建筑。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R4-cN-ACs">
+                                                <rect key="frame" x="34" y="747" width="330" height="111"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="我们通过高清摄像头和无人机来捕捉建筑影像，再利用">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="AI">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="模型">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="LUMA">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="把视频处理成">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="3D">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="模型再搭建到应用中。应用内有建筑的">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="3D">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="模型和历史信息，使用户沉浸感受弄堂建筑">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCw-wn-jGF">
+                                                <rect key="frame" x="31" y="1230" width="330" height="111"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="一段关于">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Clarisse">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="和她的">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Arcade Experience">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="组织">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.38291317219999998" green="0.38741958139999999" blue="0.40821635719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKT-PC-Pzy">
+                                                <rect key="frame" x="169" y="1119" width="211" height="111"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Arcade Experience">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" metaFont="system" size="39"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAh-4e-pCU">
+                                                <rect key="frame" x="31" y="880" width="203" height="195"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="我们致力于通过数字话来">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="展示上海丰富的历史和建筑。同时，我们希望通过此应用让世界各地人民对中国地方文化培养兴趣以及能够更加深入了解上海历史和弄堂文化。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.32079017160000001" green="0.33000129459999999" blue="0.36174732450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="xiaowei"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="6" lineHeightMultiple="1.25" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutustitle" translatesAutoresizingMaskIntoConstraints="NO" id="g0M-wK-au6">
+                                                <rect key="frame" x="24" y="82" width="132" height="126"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white line" translatesAutoresizingMaskIntoConstraints="NO" id="rgQ-kA-OeX">
+                                                <rect key="frame" x="23" y="205" width="135" height="12"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMAGE2" translatesAutoresizingMaskIntoConstraints="NO" id="B7h-WL-1OF">
+                                                <rect key="frame" x="171" y="65" width="227" height="217"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMAGE3" translatesAutoresizingMaskIntoConstraints="NO" id="BQZ-Yk-t5q">
+                                                <rect key="frame" x="214" y="861" width="305" height="242"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arcadexperience" translatesAutoresizingMaskIntoConstraints="NO" id="e75-vV-Eg4">
+                                                <rect key="frame" x="20" y="1088" width="141" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder_left" translatesAutoresizingMaskIntoConstraints="NO" id="qXC-Es-Z5m">
+                                                <rect key="frame" x="-34" y="646" width="222" height="121"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder_left" translatesAutoresizingMaskIntoConstraints="NO" id="awO-KY-dhQ">
+                                                <rect key="frame" x="-34" y="869" width="222" height="121"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder_bottom_right" translatesAutoresizingMaskIntoConstraints="NO" id="WhA-ai-9eC">
+                                                <rect key="frame" x="66" y="965" width="222" height="121"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder_right" translatesAutoresizingMaskIntoConstraints="NO" id="yQf-C6-5lx">
+                                                <rect key="frame" x="206" y="646" width="222" height="121"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder" translatesAutoresizingMaskIntoConstraints="NO" id="scU-GK-9jE">
+                                                <rect key="frame" x="34" y="665" width="74" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-yi-VEx">
+                                                <rect key="frame" x="117" y="665" width="74" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gmJ-Ta-lm9">
+                                                <rect key="frame" x="43" y="674" width="56" height="57"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.24165971804242414" green="0.24165971804242414" blue="0.24165971804242414" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drone_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Yd0-ca-yQ8">
+                                                <rect key="frame" x="126" y="674" width="56" height="57"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.2588235438" green="0.2588235438" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder" translatesAutoresizingMaskIntoConstraints="NO" id="626-Xu-rON">
+                                                <rect key="frame" x="202" y="665" width="74" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luma_logo" translatesAutoresizingMaskIntoConstraints="NO" id="a4v-3r-Ugg">
+                                                <rect key="frame" x="214" y="676" width="50" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.2588235438" green="0.2588235438" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangeborder" translatesAutoresizingMaskIntoConstraints="NO" id="d7N-XS-wah">
+                                                <rect key="frame" x="287" y="665" width="74" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xcode_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pDH-JS-PDm">
+                                                <rect key="frame" x="303" y="678" width="42" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_outline" translatesAutoresizingMaskIntoConstraints="NO" id="HXY-Hf-s9Q">
+                                                <rect key="frame" x="131" y="-10" width="131" height="95"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="mgs-76-ZX7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PNr-2l-E3A" secondAttribute="bottom" id="BHM-G3-8L2"/>
+                                    <constraint firstAttribute="trailing" secondItem="PNr-2l-E3A" secondAttribute="trailing" id="TH1-e0-bvj"/>
+                                    <constraint firstItem="PNr-2l-E3A" firstAttribute="top" secondItem="tU6-OZ-YOf" secondAttribute="top" id="UnP-Ba-ZIu"/>
+                                    <constraint firstItem="PNr-2l-E3A" firstAttribute="leading" secondItem="tU6-OZ-YOf" secondAttribute="leading" id="aNu-MV-JYU"/>
+                                    <constraint firstItem="PNr-2l-E3A" firstAttribute="centerX" secondItem="tU6-OZ-YOf" secondAttribute="centerX" id="rSM-so-pgA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eje-Ja-51m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="tU6-OZ-YOf" secondAttribute="bottom" constant="-24" id="Ou9-Tl-v43"/>
+                            <constraint firstItem="tU6-OZ-YOf" firstAttribute="leading" secondItem="eje-Ja-51m" secondAttribute="leading" id="VRE-Kn-Soo"/>
+                            <constraint firstItem="eje-Ja-51m" firstAttribute="trailing" secondItem="tU6-OZ-YOf" secondAttribute="trailing" id="dlT-Wh-sSK"/>
+                            <constraint firstItem="tU6-OZ-YOf" firstAttribute="top" secondItem="jRj-YS-2gr" secondAttribute="top" id="gvC-BI-o5a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="了解我们" id="mOr-0u-j9x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VL-NO-oB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351.9083969465648" y="714.78873239436621"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t6Q-dr-HE7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0bB-ou-Xs6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uuj-LQ-UTZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7lV-FT-9Rm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrQ-j7-evi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1015" y="-18"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vCq-6H-fvg"/>
+        <segue reference="jw9-nU-9x9"/>
+        <segue reference="HZy-bt-h7p"/>
+        <segue reference="7KN-cX-K9g"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="GREYSTARTBUTTON" width="2455" height="997"/>
+        <image name="IMAGE1" width="1935" height="1875"/>
+        <image name="IMAGE2" width="1942" height="1888"/>
+        <image name="IMAGE3" width="1948" height="1894"/>
+        <image name="aboutus" width="1100" height="260"/>
+        <image name="aboutustitle" width="1125" height="999"/>
+        <image name="arcadexperience" width="650" height="650"/>
+        <image name="bg" width="552" height="1024"/>
+        <image name="bg1" width="1542" height="686"/>
+        <image name="bg2" width="1542" height="686"/>
+        <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
+        <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
+        <image name="demo" width="580" height="248"/>
+        <image name="drone_logo" width="820" height="800"/>
+        <image name="four" width="623" height="658"/>
+        <image name="greyarrow" width="521" height="413"/>
+        <image name="grid1" width="1477" height="1417"/>
+        <image name="grid3" width="1472" height="1417"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house_3d_model" width="346" height="306"/>
+        <image name="logo_outline" width="99" height="101"/>
+        <image name="luma_logo" width="2000" height="2000"/>
+        <image name="mappin.circle" catalog="system" width="128" height="123"/>
+        <image name="newstartbutton" width="2184" height="508"/>
+        <image name="number.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="one" width="508" height="541"/>
+        <image name="orangeborder" width="1910" height="1854"/>
+        <image name="orangeborder_bottom_right" width="562" height="602"/>
+        <image name="orangeborder_left" width="562" height="602"/>
+        <image name="orangeborder_right" width="562" height="602"/>
+        <image name="shanghai" width="2082" height="504"/>
+        <image name="slid 2 gradient" width="591" height="1046"/>
+        <image name="slide 4 gradient" width="703" height="1046"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="three" width="623" height="657"/>
+        <image name="titleborder" width="562" height="602"/>
+        <image name="titleborder2" width="562" height="602"/>
+        <image name="two" width="619" height="658"/>
+        <image name="white line" width="104" height="6"/>
+        <image name="whitearrow" width="497" height="398"/>
+        <image name="xcode_icon" width="474" height="485"/>
+        <image name="yellowbox" width="1940" height="1138"/>
+        <image name="yellowgreybuttontgt" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+//
+//  DemoViewController21.swift
+//  test4
+//
+//  Created by Tario You on 2023/7/22.
+//
+
+import ARKit
+import SceneKit
+import UIKit
+import AVKit
+import AVFoundation
+
+class DemoViewController4: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc(gesture:)))
+        swipeRight.direction = .right
+        self.view.addGestureRecognizer(swipeRight)
+        
+    }
+    
+    @objc func swipeFunc(gesture: UISwipeGestureRecognizer){
+        if gesture.direction == .right{
+            performSegue(withIdentifier: "right", sender: self)
+        }
+       
+    }
+}
